@@ -1,0 +1,15 @@
+image: python:latest
+
+
+stages:
+  - stage1
+
+
+defaultJob1:
+  stage:
+    stage1
+  script:
+    - echo "Hello World"
+  artifacts:
+    paths:
+      - report.html
